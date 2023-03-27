@@ -3,6 +3,7 @@ import re
 class GregDate:
     '''
     Класс с функциями для работы с Григорианскими датами
+
     '''
 
     def __init__(self, str, type = 0):
@@ -13,11 +14,13 @@ class GregDate:
 
 
     def is_leap_year(self, year = 0):
-        if year == 0:
-            year = self.year
         '''
         Проверяет високосный год или нет
         '''
+
+        if year == 0:
+            year = self.year
+
         if year % 400 == 0:
             return True
         elif year % 100 == 0:
@@ -40,6 +43,9 @@ class GregDate:
         return s
 
     def count_days_in_previous_year(self):
+        '''
+        Считает количество полных дней в прошлом году
+        '''
         len_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
        
         if self.is_leap_year(self.year - 1):
