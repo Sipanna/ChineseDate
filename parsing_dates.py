@@ -1,6 +1,6 @@
 from dates import ChineseDate, GregDate
 
-date_str = "10.09.1985"
+date_str = "10.08.1985"
 date = GregDate(date_str)
 chinese_date = ChineseDate(date)
 

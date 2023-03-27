@@ -3,7 +3,6 @@ import re
 class GregDate:
     '''
     Класс с функциями для работы с Григорианскими датами
-
     '''
 
     def __init__(self, str, type = 0):
